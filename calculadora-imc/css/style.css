@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    width: 510px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & .user-input {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        & label {
+            color: #505050;
+        }
+
+        & input {
+            padding: 14px 26px;
+            border-radius: 6px
+            outline: none;
+            border: 1px solid #E85B81;
+            width: 100%;
+        }
+    }
+
+    & #btnCalcular {
+        background-color: #E85B81;
+        border-radius: 6px;
+        padding: 13px;
+        font-weight: bold;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        
+    }
+
+
+}
+
+.res {
+    color: #ABABAB;
+    text-align: center;
+    
+    & p{
+        width: 254px;
+        margin: auto;
+    }
+}
+
+.tabela{
+        display: flex;
+        width: 510px;
+        justify-content: space-between;
+        padding: 12px;
+        border: #F4F4F4 1px solid;
+
+        & .imc{
+            width: 260px;
+            & p:nth-child(odd) {
+                background-color: #F4F4F4;
+            }
+            
+        }
+        & .classificacao {
+            width: 260px;
+            & p:nth-child(odd) {
+                background-color: #F4F4F4;
+            }
+        }
+        & p{
+            padding: 12px;
+
+        }
+
+}
